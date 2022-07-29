@@ -600,14 +600,17 @@
                                         ></iframe> -->
 
                                         <iframe
-                                            src="/index-audio.html"
+                                            src="../index-audio.html"
                                             id="lxPlayerIframe"
                                             name="lxPlayerIframe"
                                             allowfullscreen
                                             height="218"
                                             frameborder="0"
                                             scrolling="no"
-                                            style="overflow:hidden; width: 100%"
+                                            style="
+                                                overflow: hidden;
+                                                width: 100%;
+                                            "
                                         ></iframe>
                                     </div>
                                     <div
@@ -4691,9 +4694,8 @@
 
                     <!-- 추가 스크립트 -->
                     <script>
-                        const lxPlayerIframe = document.getElementById(
-                            "lxPlayerIframe"
-                        );
+                        const lxPlayerIframe =
+                            document.getElementById("lxPlayerIframe");
                         let playList = document.querySelector(".order-link");
 
                         function displayContentDimm(number) {
